@@ -6,6 +6,7 @@ let username = "";
 //click listener on the button
 
 button.addEventListener("click", function () {
+  result.innerHTML = `<p>loading...</p>`
   async function fetchUserData(username) {
     const response = await fetch(`https://api.github.com/users/${username}`);
     const data = await response.json();
@@ -25,3 +26,5 @@ button.addEventListener("click", function () {
   }
   fetchUserData(input.value);
 });
+
+
