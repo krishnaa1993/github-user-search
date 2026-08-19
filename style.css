@@ -413,8 +413,4 @@ body > button:active {
     min-width: 105px;
   }
 }
-```
 
-This keeps your **existing HTML and JS untouched** and centers:
-
-**Search bar → Saved Users heading → saved-user pills → result card.**
