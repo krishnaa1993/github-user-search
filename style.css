@@ -4,6 +4,12 @@
   margin-bottom: 20px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-bar input {
   flex: 1;
   padding: 10px 14px;
