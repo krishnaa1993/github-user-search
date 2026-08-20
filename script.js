@@ -31,13 +31,16 @@ const fetchData = async function fetchUserData(username) {
   } else {
     console.log(data);
     result.innerHTML = `
+  <div class="card">
     <img src="${data.avatar_url}">
     <button id="save-btn">★ Save</button>
     <h2>${data.login}</h2>
     <p>${data.bio}</p>
     <p>Repos: ${data.public_repos}</p>
     <P>followers: ${data.followers}</P>
-    <P>following: ${data.following}</P>`;
+    <P>following: ${data.following}</P>
+  </div>
+`;
     const saveBtn = document.querySelector("#save-btn");
     saveBtn.addEventListener("click", function () {
       saveFavorite(data.login);
